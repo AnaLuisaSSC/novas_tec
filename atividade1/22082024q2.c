@@ -4,7 +4,7 @@
 /*  */
 	
 	int ehPrimo(int num) 
-    
+         
     {
         int ehprimo=1;
 		int i = 1;
