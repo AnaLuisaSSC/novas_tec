@@ -16,7 +16,7 @@
                 break;
             }
         }
-        return ehprimo;
+        return ehprimo;   
     }
 int main() {	
     {
