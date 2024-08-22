@@ -17,7 +17,7 @@ int main() {
         num2 = num1 + num2;
         num1 = aux;
     }
-	printf("o %d termo de Fibonacci  é %d", pos, num2);
+	printf("o %d termo de Fibonacci  é %.0Lf", pos, num2);
 	
 	return 0;
 }
