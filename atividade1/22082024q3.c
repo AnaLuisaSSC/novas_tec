@@ -5,7 +5,8 @@
 
 int main() {
 	
-	int num1 = 1, num2 = 2, aux = 0, pos = 0;
+	long num1 = 1, num2 = 2, aux = 0;
+    int pos = 0;
 
     printf("digite a posição do termo de Fibonacci:");
     scanf("%d",&pos);
