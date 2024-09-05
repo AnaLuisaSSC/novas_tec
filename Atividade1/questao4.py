@@ -36,3 +36,14 @@ except ValueError:
  esta condição or (ou) verifica se a string não tem exatamente 5 dígitos ou se contém caracteres não numéricos. 
  Se qualquer uma dessas condições for verdadeira, a mensagem de erro é exibida e a função retorna sem prosseguir.
 '''
+
+'''
+num = input ("digite um numero:")
+digitos = len(num)
+num = int(num)
+
+while(resto !=0):
+    print(num//(10**(digitos-1)), end=" ")
+    num %=(10**(digitos-1))
+    digitos -=1
+'''
