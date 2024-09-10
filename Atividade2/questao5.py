@@ -19,29 +19,26 @@ querer investigar o esquema RSA, que é amplamente usado em aplicativos robustos
 industriais.]
 '''
 
-
 def criptografar(numero):
     if not (1000 <= numero <= 9999):
         raise ValueError("O número deve ter exatamente quatro dígitos.")
     
-    # Extraindo os dígitos
     digito1 = (numero // 1000) % 10
     digito2 = (numero // 100) % 10
     digito3 = (numero // 10) % 10
     digito4 = numero % 10
 
-    # Aplicando a fórmula de criptografia
+    # fórmula de criptografia
     digito1 = (digito1 + 7) % 10
     digito2 = (digito2 + 7) % 10
     digito3 = (digito3 + 7) % 10
     digito4 = (digito4 + 7) % 10
 
-    # Troca dos dígitos
+    # troca dos dígitos
     numero_criptografado = digito3 * 1000 + digito4 * 100 + digito1 * 10 + digito2
     
     return numero_criptografado
 
-# Exemplo de uso
 try:
     numero = int(input("Digite um número de quatro dígitos para criptografar: "))
     resultado = criptografar(numero)
@@ -55,34 +52,32 @@ def descriptografar(numero_criptografado):
     if not (1000 <= numero_criptografado <= 9999):
         raise ValueError("O número criptografado deve ter exatamente quatro dígitos.")
     
-    # Extraindo os dígitos
     digito1 = (numero_criptografado // 1000) % 10
     digito2 = (numero_criptografado // 100) % 10
     digito3 = (numero_criptografado // 10) % 10
     digito4 = numero_criptografado % 10
 
-    # Troca dos dígitos
+    # troca dos dígitos
     digito1, digito3 = digito3, digito1
     digito2, digito4 = digito4, digito2
 
-    # Aplicando a fórmula de descriptografia
+    # fórmula de descriptografia
     digito1 = (digito1 - 7) % 10
     digito2 = (digito2 - 7) % 10
     digito3 = (digito3 - 7) % 10
     digito4 = (digito4 - 7) % 10
 
-    # Ajustando valores negativos
+    # arrumando valores negativos
     digito1 = (digito1 + 10) % 10
     digito2 = (digito2 + 10) % 10
     digito3 = (digito3 + 10) % 10
     digito4 = (digito4 + 10) % 10
 
-    # Montando o número original
+    # montando o número original
     numero_original = digito1 * 1000 + digito2 * 100 + digito3 * 10 + digito4
     
     return numero_original
 
-# Exemplo de uso
 try:
     numero_criptografado = int(input("Digite um número criptografado de quatro dígitos para descriptografar: "))
     resultado = descriptografar(numero_criptografado)
