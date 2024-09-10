@@ -3,12 +3,12 @@
 mostre a seguinte soma:
     E = 1 + 1/2! + 1/3! + ... + 1/N!
 '''
-import math
+import math # importa módulo
 
-def calcular_soma_serie(n):
-    soma = 0
-    for i in range(1, n + 1):
-        soma += 1 / math.factorial(i)
+def calcular_soma_serie(n):  # definição da função
+    soma = 0    # inicia variavel
+    for i in range(1, n + 1):    
+        soma += 1 / math.factorial(i)     # 1/2 = 0.5
     return soma
 
 def main():
