@@ -57,7 +57,7 @@ def converter_tempo(valor, de, para):
             raise ValueError("Conversão de tempo não suportada.")
 
 def main():
-    print("Escolha a categoria de conversão:")
+    print("Escolha tipo de conversão:")
     print("1. Temperatura")
     print("2. Distância")
     print("3. Tempo")
