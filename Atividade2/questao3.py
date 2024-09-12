@@ -4,10 +4,8 @@ deve permitir a conversão entre diferentes unidades de temperatura (Celsius, Fa
 Kelvin), distância (metros, quilômetros, milhas), e tempo (segundos, minutos, horas). Use
 um match para determinar o tipo de conversão e as unidades de entrada e saída
 '''
-
 opicao = int(input("""
-                 Você deseja:        
-                                      
+                Você deseja:                            
                 1 - temepratura      
                 2 - distancia
                 3 - tempo   
@@ -99,7 +97,7 @@ match opicao:
                 segundos = valor * 3600
                 minutos = valor * 60
                 print(f"{valor} horas é igual a {segundos} segundos e {minutos} minutos")
-                
+
             case _:
                 print("Unidade de entrada inválida")
 

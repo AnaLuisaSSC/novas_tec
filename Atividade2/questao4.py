@@ -17,50 +17,34 @@ comprado e que depende do país de origem;
 O valor total, preço total do produto mais imposto.
 '''
 
-def calcular_preco_por_grama(codigo_produto)
-    if 1 <= codigo_produto <= 4:
-        return 10
-    elif 5 <= codigo_produto <= 7:
-        return 15   
-    elif 8 <= codigo_produto <= 10:
-        return 35
-    else:
-        raise ValueError("Código do produto inválido")
+codigo_produto = int(input("Digite o código do produto (1 a 10): "))
+peso_kg = float(input("Digite o peso do produto em quilos: "))
+codigo_pais = int(input("Digite o código do país de origem (1 a 3): "))
 
-def calcular_imposto(codigo_pais, preco_total):
-    if codigo_pais == 1:
-        return 0
-    elif codigo_pais == 2:
-        return preco_total * 0.15
-    elif codigo_pais == 3:
-        return preco_total * 0.25
-    else:
-        raise ValueError("Código do país inválido")
+# peso para gramas
+peso_g = peso_kg * 1000
 
-def main():
-    codigo_produto = int(input("Digite o código do produto (1 a 10): "))
-    peso_kg = float(input("Digite o peso do produto em quilos: "))
-    codigo_pais = int(input("Digite o código do país de origem (1 a 3): "))
+if 1 <= codigo_produto <= 4:
+    preco_por_grama = 10
+elif 5 <= codigo_produto <= 7:
+    preco_por_grama = 15
+elif 8 <= codigo_produto <= 10:
+    preco_por_grama = 35
 
-    # peso em gramas
-    peso_g = peso_kg * 1000
+preco_total = preco_por_grama * peso_g  # preo total do produto
 
-    # preço por grama
-    preco_por_grama = calcular_preco_por_grama(codigo_produto)
+# imposto
+if codigo_pais == 1:
+    imposto = 0
+elif codigo_pais == 2:
+    imposto = preco_total * 0.15
+elif codigo_pais == 3:
+    imposto = preco_total * 0.25
 
-    # preço total do produto
-    preco_total = preco_por_grama * peso_g
+valor_total = preco_total + imposto
 
-    imposto = calcular_imposto(codigo_pais, preco_total)
-
-    # valor total
-    valor_total = preco_total + imposto
-
-    # resultados
-    print(f"Peso do produto: {peso_g} gramas")
-    print(f"Preço total do produto: R${preco_total:.2f}")
-    print(f"Valor do imposto: R${imposto:.2f}")
-    print(f"Valor total: R${valor_total:.2f}")
-
-if __name__ == "__main__":
-    main()
+# resultados
+print(f"Peso do produto: {peso_g} gramas")
+print(f"Preço total do produto: R${preco_total:.2f}")
+print(f"Valor do imposto: R${imposto:.2f}")
+print(f"Valor total: R${valor_total:.2f}")
