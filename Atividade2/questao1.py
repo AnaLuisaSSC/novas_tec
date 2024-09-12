@@ -28,3 +28,12 @@ def fatorial_recursivo(n):
 
 n = int(input("Digite um número para calcular o fatorial: "))
 print(f"O fatorial de {n} é {fatorial_recursivo(n)}")
+
+'''
+num = int(input("digite um numero"))
+fatorial = 1
+while(num>=1):
+    fatorial = fatorial*num;
+    num=num-1;
+print(f"o fatorial de {num}! = {fatorial}.")
+'''
