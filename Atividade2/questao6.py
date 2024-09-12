@@ -2,29 +2,25 @@
 6- Faça um programa que leia um valor N qualquer, inteiro e positivo, calcule e 
 mostre a seguinte soma:
     E = 1 + 1/2! + 1/3! + ... + 1/N!
+
+    1/1! +
 '''
-import math # importa módulo
+n = int(input("Qual valor de N: "))
 
-def calcular_soma_serie(n):  # definição da função
-    soma = 0    # inicia variavel
-    for i in range(1, n + 1):    
-        soma += 1 / math.factorial(i)     # 1/2 = 0.5
-    return soma
+if n >= 0:
+    print("O valor de N deve ser um inteiro positivo.")
+else:
+    e = 1
+    fatoral = 1
 
-def main():
-    try:
-        n = int(input("Digite um valor inteiro e positivo n: "))
-        if n <= 0:
-            raise ValueError("O valor deve ser inteiro e positivo.")
-        
-        resultado = calcular_soma_serie(n)
-        print(f"A soma da série E = 1 + 1/2! + 1/3! + ... + 1/{n}! é {resultado:.5f}")
-    
-    except ValueError as e:
-        print(f"Erro: {e}")
+for i in range(1, n + 1):
 
-if __name__ == "__main__":
-    main()
+    fatorial *= i
+    e +=1 / fatoriaç
+    for num in range(1, i + 1):
+        fatorial *= num
+
+    print(f"E = {E}")
 
 '''
 
