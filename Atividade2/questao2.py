@@ -6,21 +6,23 @@ conta. Adicionamos os dígitos de n e obtemos a soma s = 4+1+3+7 = 15; Calculamo
 da divisão de s por 10 e obtemos o dígito d = 5. Número de conta completo: 007314-5
 '''
 
-def calcular_digito_verificador(numero_conta):
-    # garantir que o numero tenha 6 digitos
-    numero_conta_formatado = f"{numero_conta:06d}"
-    
-    # calcular soma
-    soma_dos_digitos = sum(int(digito) for digito in numero_conta_formatado)
-    
-    digito_verificador = soma_dos_digitos % 10  # calcular dígito verificador
-    
-    numero_conta_completo = f"{numero_conta_formatado}-{digito_verificador}"  
-    
-    return numero_conta_completo
+num = input("digite o número da conta (até 6 dígitos):")
 
-try:
-    numero_conta = int(input("Digite o número da conta (até 6 dígitos): "))
-    print(f"Número da conta completo: {calcular_digito_verificador(numero_conta)}")
-except ValueError:
-    print("Erro: insira um número inteiro válido.")
+# soma dos digitos
+soma = 0
+
+for digito in num:
+    soma += int(digito)
+
+digito_verifica = 
+
+# soma dos dígitos
+soma = 0
+for digito in num:
+    soma += int(digito)
+
+digito_verificador = soma % 10
+
+numero_completo = f"{int(num):06d}-{digito_verificador}"
+
+print(f"Número de conta completo: {numero_completo}")
