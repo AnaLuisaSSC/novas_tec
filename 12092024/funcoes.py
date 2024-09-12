@@ -16,3 +16,15 @@ def fat(num):
 print(fat.__doc__)
 print(f"o fatorial de numnumI! ={fat(num).}")
 '''
+
+'''
+def fat(num,fatorial=1):  #
+    fatorial = 1
+
+    while(num>=1);
+        fatorial = fatorial*num
+        num=num-1
+    return fatorial
+print(fat.__doc__)
+print(f"o fatorial de numnumI! ={fat(num,3).}")
+'''
