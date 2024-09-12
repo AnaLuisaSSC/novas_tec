@@ -31,6 +31,7 @@ print(f"O fatorial de {n} é {fatorial_recursivo(n)}")
 
 '''
 num = int(input("digite um numero"))
+numI = num    # numInicial
 fatorial = 1
 while(num>=1):
     fatorial = fatorial*num;

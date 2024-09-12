@@ -84,3 +84,59 @@ try:
     print(f"Número descriptografado: {resultado:04d}")
 except ValueError as e:
     print(e)
+
+
+'''
+ope = input("""voce prefere:
+             1-criptogravar
+             2- descriptografar:""")
+match(ope)
+    case 1:
+    dado = int(input("entre com o dado de 4 dígitos"))
+
+    d1 = (dado//1000+7)%10
+
+    dado = dado%1000
+    d2 = (dado//100+7)%10
+
+    dado = dado%100
+    d3 = (dado//10+7)%10
+
+    dado = dado%10
+    d4 = (dado//1+ 7)%10
+
+    d1, d3, d2, d4 = d3, d1, d4, d2
+
+
+    print(f"{dado} criptografia ficou {d1}{d2}{d3}{d4}!")
+    break
+
+#4356 = 4*1000 + 3*100 + 5*10 + 6*1 
+case 2:
+
+    dadocripto = int(input("digite o dado criptografia:"))
+    dadoCriptoI = dadoCripto
+
+    d1 = dadoCripto//1000
+
+    dadoCripto = dadoCripto%1000
+    d2 = dadoCripto//100
+
+    dadoCripto = dadoCripto%100
+    d3 = (dadoCripto//10 + 10)
+
+    dadoCripto = dadoCripto%10
+    d4 = (dadoCripto//1 + 10) - 7
+
+    d3, d1, d4, d2 = d1, d3, d2, d4
+
+    d1 = (d1 + 10) - 7
+
+    print(f"{dadoCriptoI} descriptografia ficou {d1}{d2}{d3}{d4}!")
+
+    #1234 = 1+10 2+10 3+10 4+10
+    #      = 11-7 12-7 13-7 14-7
+    #      = 4567
+
+
+'''

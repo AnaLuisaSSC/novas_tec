@@ -7,17 +7,15 @@ da divisão de s por 10 e obtemos o dígito d = 5. Número de conta completo: 00
 '''
 
 def calcular_digito_verificador(numero_conta):
-    # Garante que o número da conta tem exatamente 6 dígitos
+    # garantir que o numero tenha 6 digitos
     numero_conta_formatado = f"{numero_conta:06d}"
     
-    # Calcula a soma dos dígitos
+    # calcular soma
     soma_dos_digitos = sum(int(digito) for digito in numero_conta_formatado)
     
-    # Calcula o dígito verificador
-    digito_verificador = soma_dos_digitos % 10
+    digito_verificador = soma_dos_digitos % 10  # calcular dígito verificador
     
-    # Formata o número da conta completo
-    numero_conta_completo = f"{numero_conta_formatado}-{digito_verificador}"
+    numero_conta_completo = f"{numero_conta_formatado}-{digito_verificador}"  
     
     return numero_conta_completo
 

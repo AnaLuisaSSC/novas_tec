@@ -34,3 +34,37 @@ x = float(input("Digite o valor de x (em radianos): "))
 
 if __name__ == "__main__":
     main()
+
+'''
+xI = int(input("qual valor de x para cos(x):"))
+x = xI*3.1415/180
+
+cos = 0
+j = 0
+
+for i in range(0, 20, 2):
+
+    fatorial = 1
+    num =i
+    while(num>=1);
+        fatorial = fatorial*num
+        num=num-1
+    cos = cos + ((-1)**j)*(x**i)/fatorial
+    j = j+1
+
+print(f"cos({x})={cos:.2f}")
+#((-1)**j)* (x**i/i!) / fatorial(i)
+'''
+
+
+'''
+def calcular_fatorial(numero):
+    resultado = 1
+    for i in range(1, numero + 1):
+        resultado *= i
+    return resultado
+
+numero = 5
+resultado = calcular_fatorial(numero)
+print("O fatorial de", numero, "é", resultado)
+'''
