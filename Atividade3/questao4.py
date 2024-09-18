@@ -106,4 +106,17 @@ def aplicar_operacao(a, b, operação)
     else:
         print("Operação não reconhecida")
 
+print(aplicar_operacao(5, 3, 'soma'))  # 8
+print(aplicar_operacao(5, 3, 'subtracao'))  # 2
+print(aplicar_operacao(5, 3, 'multiplicacao'))  # 15
+print(aplicar_operacao(5, 3, 'divisao'))  # 1.666...
+print(aplicar_operacao(5, 3, 'resto'))  # 2
+print(aplicar_operacao(5, 3, 'potencia'))  # 125
+print(aplicar_operacao(9, operacao='raiz'))  # 3.0
+print(aplicar_operacao(5, operacao='fatorial'))  # 120
+print(aplicar_operacao(8, 2, 'logaritmo'))  # 3.0
+print(aplicar_operacao(60, operacao='cosseno'))  # aproximadamente 0.5
+print(aplicar_operacao(30, operacao='seno'))  # aproximadamente 0.5
+print(aplicar_operacao(45, operacao='tangente'))  # aproximadamente 1.0
+
 aplicar_operacao()
