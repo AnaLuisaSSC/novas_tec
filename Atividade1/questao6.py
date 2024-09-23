@@ -2,6 +2,19 @@
 6- Escreva um programa que leia a quantidade em segundos e imprima o resultado em dias,
 horas, minutos e segundos.
 ''' 
+s = int(input('Escreva um valor para segundos: '))
+
+dias = s // 86400 # segundos para dias
+s_restante = s % 86400 # segundos restantes
+horas = s_restante // 3600 
+s_restante %= 3600
+minutos = s_restante // 60
+segundos = s_restante % 60
+
+print('Dias: {}\nHoras: {}\nMinutos: {}\nSegundos: {}'.format(dias, horas, minutos, segundos))
+
+
+'''
 def converter_tempo(total_segundos):
     # calcular numero de dias
     dias = total_segundos // 86400   
@@ -35,7 +48,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-   
+'''   
 '''
  if __name__ == "__main__": é uma verificação que garante que o código dentro desse bloco só será executado se o script for executado 
  diretamente, e não quando for importado como um módulo em outro script.
