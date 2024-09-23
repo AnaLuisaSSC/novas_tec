@@ -4,6 +4,16 @@ número em seus dígitos individuais e imprime os dígitos separados uns dos out
 espaços cada. Por exemplo, se o usuário digitar o número 42339, o programa deve imprimir: 4
 2 3 3 9. 
 '''
+
+numero = input("Digite um número de cinco dígitos: ")
+
+resultado = f"{numero[0]}   {numero[1]}   {numero[2]}   {numero[3]}   {numero[4]}"
+
+print('\n')
+print(resultado)
+
+
+'''
 #def é usada para definir uma função
 
 def separa_digitos(num):  # Separar o número em dígitos individuais
@@ -29,7 +39,7 @@ except ValueError:
     print("Erro: insira um número válido.")
 
 # num_str.isdigit() verifica se todos os caracteres na string são dígitos (de 0 a 9).Se algum caractere não for um dígito,isdigit() retorna False.
-
+'''
 '''
  if len(num_str) != 5 or not num_str.isdigit(): Usando not na frente, verificamos se não é um número válido 
  (ou seja, se num_str contém qualquer coisa que não seja um dígito).
