@@ -2,6 +2,19 @@
 5- Escreva um aplicativo que receba a, b e c, coeficientes de uma equação do segundo grau, e
 calcule as raízes xʼ e xˮ através da fórmula de Báskara. 
 '''
+
+a = float(input('Escreva um valor para a: '))
+b = float(input('Escreva um valor para b: '))
+c = float(input('Escreva um valor para c: '))
+
+delta = (b**2) - (4*a*c)
+x1 = (-b + (delta**0.5)) / (2*a)
+x2 = (-b - (delta**0.5)) / (2*a)
+
+print('Delta: {} \nX1: {} \nX2: {}'.format(delta, x1, x2))
+
+
+'''
 # importar math, para funções  matemáticas avançadas (como a raiz quadrada)
 import math 
 
@@ -49,7 +62,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-
+'''
 '''
  if __name__ == "__main__": é uma verificação que garante que o código dentro desse bloco só será executado se o script for executado 
  diretamente, e não quando for importado como um módulo em outro script.
