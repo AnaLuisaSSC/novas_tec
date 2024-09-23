@@ -5,9 +5,9 @@ espaços cada. Por exemplo, se o usuário digitar o número 42339, o programa de
 2 3 3 9. 
 '''
 
-numero = input("Digite um número de cinco dígitos: ")
+num = input("Digite um número de cinco dígitos: ")
 
-resultado = f"{numero[0]}   {numero[1]}   {numero[2]}   {numero[3]}   {numero[4]}"
+resultado = f"{num[0]}   {num[1]}   {num[2]}   {num[3]}   {num[4]}"
 
 print('\n')
 print(resultado)
