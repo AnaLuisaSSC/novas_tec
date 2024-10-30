@@ -4,10 +4,16 @@ def dicionario_listas():  #criar_dicionario_com_listas
     while True:
         .
 def apaga()
-altera()
-lista()
-le()
-grava()
-menu()
 
-verificarbirthday()
+def altera()
+
+def lista()
+
+def le()
+
+def grava()
+
+def menu()
+
+def verificarbirthday()
+
