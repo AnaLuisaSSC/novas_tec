@@ -6,7 +6,7 @@ class Alien(Sprite):
     """
     Uma classe que representa um único alienígena da frota.
     """
-    def __init__(self, ai_settings, screen):
+    def __init__(self, ai_settings, screen):  
         """
         Inicializa o alienígena e define sua posição inicial.
         """
